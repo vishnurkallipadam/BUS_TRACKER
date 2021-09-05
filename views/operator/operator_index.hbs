@@ -1,0 +1,33 @@
+
+<div>
+<div class="container mt-5 table-responsive">
+  <h1>My Bus</h1>
+<table class="table align-middle table-hover">
+  <thead>
+    <tr class="table-info
+    ">
+      <th scope="col">Bus Name</th>
+      <th scope="col">Bus Number</th>
+      <th scope="col">From</th>
+      <th scope="col">To</th>
+      <th scope="col">Route</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+      {{#each bus}}
+    <tr class="table-light">
+    
+      <th scope="row">{{this.busname}}</th>
+      <td>{{this.regno}}</td>
+      <td>{{this.start}}</td>
+      <td>{{this.stop}}</td>
+      <td>{{this.route}}</td>
+      <td> <a  href="/operator/edit_bus/{{this._id}}" class="btn btn-info" onclick="return confirm('are you sure you want to edit Bus Details??')">Edit</a><a href="/operator/removebus/{{this._id}}" class="btn btn-danger" onclick="return confirm('Are you sure you want to remove {{this.busname}}')">Remove</a></td>
+      
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>
+</div>

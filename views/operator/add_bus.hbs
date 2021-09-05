@@ -1,0 +1,98 @@
+<div class="container" style="padding-top:2cm; ">
+  <form action="/operator/add_bus" method="POST" enctype="multipart/form-data">
+    <h2>ADD BUS</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="first">Name of Bus</label>
+          <input type="text" class="form-control" placeholder="Name of Bus" id="bname" name="busname" required>
+          <input type="hidden" name="operatorid" value="{{operator._id}}">
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="row">
+      
+      <div class="col-md-6">
+
+        <div class="form-group">
+          <label for="phone">Registration Number</label>
+          <input type="text" class="form-control" id="regno" placeholder="KL 00 @@ 0000" name="regno" required>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="form-group">
+          <label for="phone">Starting From</label>
+          <input type="text" class="form-control" id="start" placeholder="Enter the Starting Destination" name="start" required>
+        </div>
+      </div>
+      <div class="col-md-6">
+
+
+        <div class="form-group">
+          <label for="phone">Starting Time</label>
+          <input type="time" class="form-control" id="startingtime" placeholder="" name="startingtime" required>
+        </div>
+      
+      <div class="form-group ">
+          <label for="phone">Going To</label>
+          <input type="place" class="form-control" id="stop" placeholder="" name="stop" required>
+        </div>
+      
+      <div class="form-group">
+          <label for="phone">Reaching Time</label>
+          <input type="time" class="form-control" id="stoptime" placeholder="" name="stoptime" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Route Via</label>
+          <input type="text" class="form-control" id="route" placeholder="Route" name="route" required>
+        </div>
+        
+
+        <div class="form-group">
+          <label for="phone">Stop 1 </label>
+          <input type="text" class="form-control" id="route" placeholder="Stop 1" name="stop1" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Stop 2</label>
+          <input type="text" class="form-control" id="route" placeholder="Stop 2" name="stop2" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Stop 3</label>
+          <input type="text" class="form-control" id="route" placeholder="Stop 3" name="stop3" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Stop 4</label>
+          <input type="text" class="form-control" id="route" placeholder="Stop 4" name="stop4" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Stop 5</label>
+          <input type="text" class="form-control" id="route" placeholder="Stop 5" name="stop5" required>
+        </div>
+
+
+      </div>
+      </div>
+      </div>
+
+    <div style="padding-top: 5px;">
+      <button type="submit" class="btn btn-primary" onclick="return confirm('Confirm to Add Bus ')">Add Bus</button>
+      <button type="reset" class="btn btn-secondary">Reset</button>
+    </div>
+  </form>
+
+
+    </div>
+
+
+    
+</div>
